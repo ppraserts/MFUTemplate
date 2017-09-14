@@ -9,26 +9,52 @@ using Dapper;
 
 namespace MFU.DataAccess.Repository
 {
-    public class DocumentCategoryRepository : IRepository<DocumentCategory>
+    public class DocumentCategoryRepository : Repository<DocumentCategory>
     {
-        private readonly IDbConnection db;
-        public DocumentCategoryRepository()
+        public IEnumerable<DocumentCategory> GetAllWithSqlScript()
         {
-            db = DbConnector.GetInstant();
-        }
-        public DocumentCategoryRepository(DatabaseSource dataSource)
-        {
-            db = DbConnector.GetInstant(dataSource);
+            using (connectionFactory)
+            {
+                return connectionFactory.Query<DocumentCategory>(SqlText.DocumentCategory_Select).ToList();
+            }
         }
 
-        public IEnumerable<DocumentCategory> GetAll()
+        public IEnumerable<DocumentCategory> GetAllWithSqlScriptByLoadDetail()
         {
-            return db.GetList<DocumentCategory>();
+            using (connectionFactory)
+            {
+                var documentCategoryDictionary = new Dictionary<int, DocumentCategory>();
+                return connectionFactory.Query<DocumentCategory, Document, DocumentCategory>(
+                        SqlText.DocumentCategory_Select_WithDetail,
+                        (documentCategory, document) =>
+                        {
+                            DocumentCategory documentCategoryEntry;
+
+                            if (!documentCategoryDictionary.TryGetValue(documentCategory.Id, out documentCategoryEntry))
+                            {
+                                documentCategoryEntry = documentCategory;
+                                documentCategoryEntry.Documents = new List<Document>();
+                                documentCategoryDictionary.Add(documentCategoryEntry.Id, documentCategoryEntry);
+                            }
+
+                            if (document != null)
+                                documentCategoryEntry.Documents.Add(document);
+
+                            return documentCategoryEntry;
+                        },
+                        splitOn: "Id")
+                    .Distinct()
+                    .ToList();
+            }
         }
 
-        public DocumentCategory GetById(int id)
+        public DocumentCategory GetWithSqlScriptById(int id)
         {
-            return db.Get<DocumentCategory>(id);
+            using (connectionFactory)
+            {
+                return connectionFactory.QuerySingle<DocumentCategory>(SqlText.DocumentCategory_Select_ByID,
+                    new {DocumentCategoryID = id});
+            }
         }
     }
 }

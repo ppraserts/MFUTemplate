@@ -12,6 +12,8 @@ namespace MFU.Models.ValidationRules
 
             RuleFor(documentCategory => documentCategory.Name).NotEmpty().MaximumLength(50);
             RuleFor(documentCategory => documentCategory.Description).MaximumLength(255);
+            RuleFor(model => model.Documents)
+                .SetCollectionValidator(new DocumentValidator());
         }
     }
 }

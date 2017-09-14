@@ -23,7 +23,7 @@ namespace MFU.Logger
                     break;
 
                 case LoggerTarget.Database:
-                    logger = new DBLogger();
+                    logger = new DatabaseLogger();
                     logger.Level = level;
                     logger.Log(message);
                     break;

@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Document.cs" />
     <Compile Include="DocumentCategory.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationRules\DocumentCategoryValidator.cs" />
+    <Compile Include="ValidationRules\DocumentValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

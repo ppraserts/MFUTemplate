@@ -65,7 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Target\DBLogger.cs" />
+    <Compile Include="Target\DatabaseLogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,16 +1,12 @@
 ﻿using MFU.DataAccess.Repository;
 using MFU.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MFU.Service
 {
     public class DocumentCategoryService
     {
-        private DocumentCategoryRepository documentCategoryRepository { get; set; }
+        private DocumentCategoryRepository documentCategoryRepository;
         public DocumentCategoryService()
         {
             documentCategoryRepository = new DocumentCategoryRepository();
@@ -18,10 +14,13 @@ namespace MFU.Service
 
         public IEnumerable<DocumentCategory> GetAll()
         {
-            return documentCategoryRepository.GetAll();
+            //documentCategoryRepository.GetAllWithSqlScript();
+            //documentCategoryRepository.GetAll();
+            return documentCategoryRepository.GetAllWithSqlScriptByLoadDetail();
         }
         public DocumentCategory GetById(int id)
         {
+            //documentCategoryRepository.GetWithSqlScriptById(id);
             return documentCategoryRepository.GetById(id);
         }
     }

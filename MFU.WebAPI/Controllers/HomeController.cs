@@ -17,8 +17,9 @@ namespace MFU.WebAPI.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+            var documentCategorys = documentCategoryService.GetAll();
 
-            return View(documentCategoryService.GetAll());
+            return View(documentCategorys);
         }
 
         public ActionResult Details(int id)
