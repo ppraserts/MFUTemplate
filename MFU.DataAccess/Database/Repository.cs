@@ -7,55 +7,55 @@ namespace MFU.DataAccess
 {
     public class Repository<T> : IRepository<T> where T : EntityBase
     {
-        public IDbConnection connectionFactory;
-
         public Repository()
         {
-            connectionFactory = ConnectionFactory.GetInstant();
+            ConnectionFactory.LoadDatabaseSource();
         }
 
         public Repository(DatabaseSource dataSource)
         {
-            connectionFactory = ConnectionFactory.GetInstant(dataSource);
+            ConnectionFactory.LoadDatabaseSource(dataSource);
         }
 
         public T GetById(int id)
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                return connectionFactory.Get<T>(id);
+                return conn.Get<T>(id);
             }
+            
         }
 
         public IEnumerable<T> GetAll()
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                return connectionFactory.GetList<T>();
+                return conn.GetList<T>();
             }
         }
 
-        public void Add(T entity)
+        public T Add(T entity)
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                connectionFactory.Insert(entity);
+                conn.Insert(entity);
             }
+            return entity;
         }
 
         public void Delete(T entity)
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                connectionFactory.Delete(entity);
+                conn.Delete(entity);
             }
         }
 
         public void Update(T entity)
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                connectionFactory.Update(entity);
+                conn.Update(entity);
             }
         }
     }

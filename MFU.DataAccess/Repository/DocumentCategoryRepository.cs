@@ -1,11 +1,8 @@
 ﻿using MFU.Models;
-using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Dapper;
+using System.Data;
 
 namespace MFU.DataAccess.Repository
 {
@@ -13,18 +10,18 @@ namespace MFU.DataAccess.Repository
     {
         public IEnumerable<DocumentCategory> GetAllWithSqlScript()
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                return connectionFactory.Query<DocumentCategory>(SqlText.DocumentCategory_Select).ToList();
+                return conn.Query<DocumentCategory>(SqlText.DocumentCategory_Select).ToList();
             }
         }
 
         public IEnumerable<DocumentCategory> GetAllWithSqlScriptByLoadDetail()
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
                 var documentCategoryDictionary = new Dictionary<int, DocumentCategory>();
-                return connectionFactory.Query<DocumentCategory, Document, DocumentCategory>(
+                return conn.Query<DocumentCategory, Document, DocumentCategory>(
                         SqlText.DocumentCategory_Select_WithDetail,
                         (documentCategory, document) =>
                         {
@@ -50,11 +47,39 @@ namespace MFU.DataAccess.Repository
 
         public DocumentCategory GetWithSqlScriptById(int id)
         {
-            using (connectionFactory)
+            using (var conn = ConnectionFactory.Connection())
             {
-                return connectionFactory.QuerySingle<DocumentCategory>(SqlText.DocumentCategory_Select_ByID,
-                    new {DocumentCategoryID = id});
+                return conn.QuerySingle<DocumentCategory>(SqlText.DocumentCategory_Select_ByID,
+                new { DocumentCategoryID = id });
             }
+        }
+
+        public void InsertAndRollback()
+        {
+            string wrongSql = "INSERT INTO DocumentCategorys (Name, Description) Values (@Name, @Description);";
+            using (var conn = ConnectionFactory.Connection())
+            {
+                conn.Open();
+                using (var transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        conn.Execute(wrongSql
+                             , new DocumentCategory() { Name = "", Description = "xxxxxxx", Id = 1 }
+                             , commandType: CommandType.Text
+                             , transaction: transaction);
+
+                        transaction.Commit();
+
+                    }
+                    catch (System.Exception)
+                    {
+
+                        transaction.Rollback();
+                    }
+                }
+            }
+           
         }
     }
 }

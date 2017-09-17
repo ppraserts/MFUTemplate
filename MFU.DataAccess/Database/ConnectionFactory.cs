@@ -1,34 +1,31 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 namespace MFU.DataAccess
 {
-    public class ConnectionFactory
+    public static class ConnectionFactory
     {
-        private ConnectionFactory() { }
 
-        public static IDbConnection GetInstant()
+        public static Func<IDbConnection> Connection = () => GetDatabaseConnection();
+
+        private static DatabaseSource CurrentDatabaseSource;
+
+        public static void LoadDatabaseSource()
         {
-            var dataSource = (DatabaseSource)Enum.Parse(typeof(DatabaseSource), DataAccessAppSetting.DefaultDatabase);
-            return GetDatabaseConnection(dataSource);
+            CurrentDatabaseSource = (DatabaseSource)Enum.Parse(typeof(DatabaseSource), DataAccessAppSetting.DefaultDatabase);
         }
 
-        public static IDbConnection GetInstant(DatabaseSource dataSource)
+        public static void LoadDatabaseSource(DatabaseSource dataSource)
         {
-            return GetDatabaseConnection(dataSource);
+            CurrentDatabaseSource = dataSource;
         }
 
-        private static IDbConnection GetDatabaseConnection(DatabaseSource dataSource)
+        private static IDbConnection GetDatabaseConnection()
         {
-            switch (dataSource)
+            switch (CurrentDatabaseSource)
             {
                 case DatabaseSource.SqlServer:
                     return new SqlConnection(DataAccessConnectionString.SqlServer);

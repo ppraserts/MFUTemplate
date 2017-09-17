@@ -18,3 +18,23 @@ c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils.Te
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.csprojResolveAssemblyReference.cache
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.dll
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.pdb
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\nunit.engine.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\nunit.engine.api.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Mono.Cecil.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Mono.Cecil.Pdb.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Mono.Cecil.Mdb.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Mono.Cecil.Rocks.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\MFU.Utils.Tests.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\MFU.Utils.Tests.pdb
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Castle.Core.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\MFU.Utils.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Moq.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\nunit.framework.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\MFU.Utils.pdb
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Moq.pdb
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\Moq.xml
+C:\dev\MFUTemplate\MFU.Utils.Tests\bin\Debug\nunit.framework.xml
+C:\dev\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.csprojResolveAssemblyReference.cache
+C:\dev\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.dll
+C:\dev\MFUTemplate\MFU.Utils.Tests\obj\Debug\MFU.Utils.Tests.pdb

@@ -11,7 +11,7 @@ namespace MFU.DataAccess
     {
         T GetById(int id);
         IEnumerable<T> GetAll();
-        void Add(T entity);
+        T Add(T entity);
         void Delete(T entity);
         void Update(T entity);
     }
