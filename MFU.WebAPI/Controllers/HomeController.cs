@@ -1,15 +1,14 @@
-﻿using MFU.Service;
+﻿using MFU.Models;
+using MFU.Models.ValidationRules;
+using MFU.Service;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MFU.WebAPI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private DocumentCategoryService documentCategoryService { get; set; }
+        private DocumentCategoryService documentCategoryService;
         public HomeController()
         {
             documentCategoryService = new DocumentCategoryService();
@@ -25,6 +24,89 @@ namespace MFU.WebAPI.Controllers
         public ActionResult Details(int id)
         {
             return View(documentCategoryService.GetById(id));
+        }
+
+        public ActionResult Create()
+        {
+            DocumentCategory documentCategory = new DocumentCategory();
+            documentCategory.CreatedDate = DateTime.Now;
+            documentCategory.ModifiedDate = DateTime.Now;
+
+            return View(documentCategory);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(DocumentCategory documentCategory)
+        {
+            documentCategory.Id = int.MaxValue;
+            ValidateModel<DocumentCategory>(documentCategory, new DocumentCategoryValidator());
+            if (ModelState.IsValid)
+            {
+                documentCategoryService.Insert(documentCategory);
+                return RedirectToAction("Index");
+            }
+
+            return View(documentCategory);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            return View(documentCategoryService.GetById(id));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, DocumentCategory documentCategory)
+        {
+            try
+            {
+                ValidateModel<DocumentCategory>(documentCategory, new DocumentCategoryValidator());
+                if (!ModelState.IsValid)
+                {
+                    return View();
+                }
+
+                var oldDocumentCategory = documentCategoryService.GetById(id);
+                if (oldDocumentCategory == null)
+                {
+                    return View();
+                }
+
+                documentCategoryService.Update(documentCategory);
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public ActionResult Delete(int id)
+        {
+            return View(documentCategoryService.GetById(id));
+        }
+
+        [HttpPost]
+        public ActionResult Delete(int id, DocumentCategory documentCategory)
+        {
+            try
+            {
+                documentCategory = documentCategoryService.GetById(id);
+                if (documentCategory == null)
+                {
+                    return View();
+                }
+
+                documentCategoryService.Delete(documentCategory);
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }

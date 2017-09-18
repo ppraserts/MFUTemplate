@@ -81,5 +81,13 @@ namespace MFU.DataAccess.Repository
             }
            
         }
+
+        public IEnumerable<DocumentCategory> GetAllWithPaged(int page = 1, string condition = "", string orderby = "")
+        {
+            using (var conn = ConnectionFactory.Connection())
+            {
+                return conn.GetListPaged<DocumentCategory>(page, DataAccessAppSetting.RecordPerPage, condition, orderby);
+            }
+        }
     }
 }

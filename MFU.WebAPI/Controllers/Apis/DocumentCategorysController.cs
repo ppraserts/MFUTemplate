@@ -2,10 +2,7 @@
 using System.Web.Http;
 using MFU.Models;
 using MFU.Service;
-using System.Net;
 using MFU.Models.ValidationRules;
-using FluentValidation.Results;
-using FluentValidation;
 
 namespace MFU.WebAPI.Controllers
 {

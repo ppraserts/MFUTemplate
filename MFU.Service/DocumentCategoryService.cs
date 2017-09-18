@@ -1,7 +1,6 @@
 ﻿using MFU.DataAccess.Repository;
 using MFU.Models;
 using System.Collections.Generic;
-using System.Threading;
 
 namespace MFU.Service
 {
@@ -19,6 +18,11 @@ namespace MFU.Service
             //documentCategoryRepository.GetAllWithSqlScriptByLoadDetail();
             //documentCategoryRepository.InsertAndRollback();
             return documentCategoryRepository.GetAllWithSqlScriptByLoadDetail();
+        }
+
+        public IEnumerable<DocumentCategory> GetAllWithPaged(int page = 1)
+        {
+            return documentCategoryRepository.GetAllWithPaged(page);
         }
 
         public DocumentCategory GetById(int id)
