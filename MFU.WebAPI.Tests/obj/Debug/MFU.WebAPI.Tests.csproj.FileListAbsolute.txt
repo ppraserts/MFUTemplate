@@ -118,3 +118,6 @@ C:\dev\MFUTemplate\MFU.WebAPI.Tests\bin\Debug\Dapper.xml
 C:\dev\MFUTemplate\MFU.WebAPI.Tests\obj\Debug\MFU.WebAPI.Tests.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.WebAPI.Tests\obj\Debug\MFU.WebAPI.Tests.dll
 C:\dev\MFUTemplate\MFU.WebAPI.Tests\obj\Debug\MFU.WebAPI.Tests.pdb
+C:\dev\MFUTemplate\MFU.WebAPI.Tests\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.WebAPI.Tests\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.WebAPI.Tests\bin\Debug\en-US\MFU.Localization.resources.dll

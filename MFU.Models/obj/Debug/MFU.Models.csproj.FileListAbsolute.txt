@@ -12,3 +12,6 @@ C:\dev\MFUTemplate\MFU.Models\bin\Debug\FluentValidation.xml
 C:\dev\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.dll
 C:\dev\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.pdb
+C:\dev\MFUTemplate\MFU.Models\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.Models\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.Models\bin\Debug\en-US\MFU.Localization.resources.dll

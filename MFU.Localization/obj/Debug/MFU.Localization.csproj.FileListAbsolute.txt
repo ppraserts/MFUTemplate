@@ -1,0 +1,9 @@
+C:\dev\MFUTemplate\MFU.Localization\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.Localization\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.Localization\bin\Debug\en-US\MFU.Localization.resources.dll
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\MFU.Localization.Resource.en-US.resources
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\MFU.Localization.csproj.GenerateResource.Cache
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\en-US\MFU.Localization.resources.dll
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.Localization\obj\Debug\MFU.Localization.Resource.resources

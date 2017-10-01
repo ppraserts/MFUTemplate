@@ -124,3 +124,6 @@ C:\dev\MFUTemplate\MFU.WebAPI\bin\Dapper.SimpleCRUD.xml
 C:\dev\MFUTemplate\MFU.WebAPI\obj\Debug\MFU.WebAPI.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.WebAPI\obj\Debug\MFU.WebAPI.dll
 C:\dev\MFUTemplate\MFU.WebAPI\obj\Debug\MFU.WebAPI.pdb
+C:\dev\MFUTemplate\MFU.WebAPI\bin\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.WebAPI\bin\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.WebAPI\bin\en-US\MFU.Localization.resources.dll

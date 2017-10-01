@@ -36,3 +36,6 @@ C:\dev\MFUTemplate\MFU.DataAccess\bin\Debug\FluentValidation.xml
 C:\dev\MFUTemplate\MFU.DataAccess\obj\Debug\MFU.DataAccess.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.DataAccess\obj\Debug\MFU.DataAccess.dll
 C:\dev\MFUTemplate\MFU.DataAccess\obj\Debug\MFU.DataAccess.pdb
+C:\dev\MFUTemplate\MFU.DataAccess\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.DataAccess\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.DataAccess\bin\Debug\en-US\MFU.Localization.resources.dll

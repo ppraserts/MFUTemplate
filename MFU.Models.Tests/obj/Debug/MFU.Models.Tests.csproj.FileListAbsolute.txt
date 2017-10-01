@@ -46,3 +46,6 @@ C:\dev\MFUTemplate\MFU.Models.Tests\bin\Debug\nunit.framework.xml
 C:\dev\MFUTemplate\MFU.Models.Tests\obj\Debug\MFU.Models.Tests.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.Models.Tests\obj\Debug\MFU.Models.Tests.dll
 C:\dev\MFUTemplate\MFU.Models.Tests\obj\Debug\MFU.Models.Tests.pdb
+C:\dev\MFUTemplate\MFU.Models.Tests\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.Models.Tests\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.Models.Tests\bin\Debug\en-US\MFU.Localization.resources.dll

@@ -162,6 +162,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\Apis\BaseApiController.cs" />
+    <Compile Include="Controllers\Apis\RequestController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Apis\DocumentCategorysController.cs" />
@@ -199,6 +200,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\DeployTest.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -226,6 +228,10 @@
     <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MFU.Localization\MFU.Localization.csproj">
+      <Project>{bcc04b34-123a-4375-89dd-d22a61ae336e}</Project>
+      <Name>MFU.Localization</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MFU.Logger\MFU.Logger.csproj">
       <Project>{b4b05230-16bb-4013-832e-eea0a41fc1e9}</Project>
       <Name>MFU.Logger</Name>

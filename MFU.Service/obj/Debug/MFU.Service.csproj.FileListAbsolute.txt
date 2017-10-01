@@ -38,3 +38,6 @@ C:\dev\MFUTemplate\MFU.Service\bin\Debug\FluentValidation.xml
 C:\dev\MFUTemplate\MFU.Service\obj\Debug\MFU.Service.csprojResolveAssemblyReference.cache
 C:\dev\MFUTemplate\MFU.Service\obj\Debug\MFU.Service.dll
 C:\dev\MFUTemplate\MFU.Service\obj\Debug\MFU.Service.pdb
+C:\dev\MFUTemplate\MFU.Service\bin\Debug\MFU.Localization.dll
+C:\dev\MFUTemplate\MFU.Service\bin\Debug\MFU.Localization.pdb
+C:\dev\MFUTemplate\MFU.Service\bin\Debug\en-US\MFU.Localization.resources.dll

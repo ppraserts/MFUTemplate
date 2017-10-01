@@ -2,6 +2,9 @@
 using MFU.Models.ValidationRules;
 using MFU.Service;
 using System;
+using System.Globalization;
+using System.Threading;
+using System.Web;
 using System.Web.Mvc;
 
 namespace MFU.WebAPI.Controllers
@@ -9,10 +12,23 @@ namespace MFU.WebAPI.Controllers
     public class HomeController : BaseController
     {
         private DocumentCategoryService documentCategoryService;
+        
         public HomeController()
         {
-            documentCategoryService = new DocumentCategoryService();
+            documentCategoryService = new DocumentCategoryService(); 
         }
+        public ActionResult ChangeLanguage(string lang)
+        {
+            CultureInfo ci = new CultureInfo(lang);
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(ci.Name);
+
+            HttpCookie cookie = new HttpCookie("Language");
+            cookie.Value = lang;
+            Response.Cookies.Add(cookie);
+            return RedirectToAction("Index");
+        }
+
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
