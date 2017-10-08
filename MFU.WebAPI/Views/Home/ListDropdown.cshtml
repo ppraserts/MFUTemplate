@@ -34,8 +34,8 @@
                     success: function (documentCategorys) {
                         $.each(documentCategorys, function (i, documentCategory) {
                             $("#documentCategorySelect").append('<option value="'
-                            + documentCategory.Id + '">'
-                            + documentCategory.Name + '</option>');
+                            + documentCategory.id + '">'
+                            + documentCategory.name + '</option>');
                         });
                     },
                     error: function (ex) {
