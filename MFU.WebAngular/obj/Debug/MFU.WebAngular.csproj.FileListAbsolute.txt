@@ -18,23 +18,3 @@ c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.WebAngul
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.csprojResolveAssemblyReference.cache
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.dll
 c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.pdb
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\csc.exe
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\System.Collections.Immutable.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\System.Reflection.Metadata.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\vbc.exe
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\VBCSCompiler.exe
-C:\dev\MFUTemplate\MFU.WebAngular\bin\roslyn\VBCSCompiler.exe.config
-C:\dev\MFUTemplate\MFU.WebAngular\bin\MFU.WebAngular.dll.config
-C:\dev\MFUTemplate\MFU.WebAngular\bin\MFU.WebAngular.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\MFU.WebAngular.pdb
-C:\dev\MFUTemplate\MFU.WebAngular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\dev\MFUTemplate\MFU.WebAngular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\dev\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.csprojResolveAssemblyReference.cache
-C:\dev\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.dll
-C:\dev\MFUTemplate\MFU.WebAngular\obj\Debug\MFU.WebAngular.pdb

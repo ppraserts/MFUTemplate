@@ -124,5 +124,10 @@ namespace MFU.WebAPI.Controllers
                 return View();
             }
         }
+
+        public ActionResult ListDropdown()
+        {
+            return View();
+        }
     }
 }
