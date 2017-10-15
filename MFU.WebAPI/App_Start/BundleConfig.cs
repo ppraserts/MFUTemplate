@@ -19,10 +19,19 @@ namespace MFU.WebAPI
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/bundles/Scripts").Include(
+                               "~/Scripts/ace-elements.min.js",
+                               "~/Scripts/ace.min.js",
+                               "~/Scripts/bootbox.js",
+                               "~/Scripts/ace-extra.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                       "~/Content/bootstrap.css",
+                       "~/Content/site.css",
+                       "~/Content/font-awesome.min.css",
+                       "~/Content/ace.min.css",
+                       "~/Content/ace-rtl.min.css",
+                       "~/Content/ace-skins.min.css"));
         }
     }
 }

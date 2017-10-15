@@ -2,6 +2,7 @@
 using MFU.Models.ValidationRules;
 using MFU.Service;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
 using System.Web;
@@ -32,8 +33,8 @@ namespace MFU.WebAPI.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-            var documentCategorys = documentCategoryService.GetAll();
-
+            //var documentCategorys = documentCategoryService.GetAll();
+            var documentCategorys = new List<DocumentCategory>();
             return View(documentCategorys);
         }
 

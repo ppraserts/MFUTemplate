@@ -13,32 +13,34 @@ namespace MFU.DataAccess.Repository
         }
         public IEnumerable<Request> GetAllRequest()
         {
-            using (var conn = ConnectionFactory.Connection())
-            {
-                return conn.Query<Request, RequestType, Request>(SqlText.Request_Select,
-                (request, reuestType) =>
-                {
-                    request.RequestType = reuestType;
-                    return request;
-                },
-                splitOn: "RequestTypeId"
-                ).ToList();
-            }
+            //using (var conn = ConnectionFactory.Connection())
+            //{
+            //    return conn.Query<Request, RequestType, Request>(SqlText.Request_Select,
+            //    (request, reuestType) =>
+            //    {
+            //        request.RequestType = reuestType;
+            //        return request;
+            //    },
+            //    splitOn: "RequestTypeId"
+            //    ).ToList();
+            //}
+            return new List<Request>();
         }
 
         public Request GetRequestById(int id)
         {
-            using (var conn = ConnectionFactory.Connection())
-            {
-                return conn.Query<Request, RequestType, Request>(SqlText.Request_Select_ByID.Replace("@REQUESTID", id.ToString()),
-                (request, reuestType) =>
-                {
-                    request.RequestType = reuestType;
-                    return request;
-                },
-                splitOn: "RequestTypeId"
-                ).FirstOrDefault();
-            }
+            //using (var conn = ConnectionFactory.Connection())
+            //{
+            //    return conn.Query<Request, RequestType, Request>(SqlText.Request_Select_ByID.Replace("@REQUESTID", id.ToString()),
+            //    (request, reuestType) =>
+            //    {
+            //        request.RequestType = reuestType;
+            //        return request;
+            //    },
+            //    splitOn: "RequestTypeId"
+            //    ).FirstOrDefault();
+            //}
+            return new Request();
         }
 
     }

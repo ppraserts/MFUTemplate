@@ -65,11 +65,16 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="DocumentCategoryValidatorTest.cs" />
-    <Compile Include="DocumentValidatorTest.cs" />
+    <Compile Include="RequestDetailTest.cs" />
+    <Compile Include="ValidationRules\AddressValidatorTest.cs" />
+    <Compile Include="ValidationRules\DocumentCategoryValidatorTest.cs" />
+    <Compile Include="ValidationRules\DocumentValidatorTest.cs" />
     <Compile Include="MockData\MockDocument.cs" />
     <Compile Include="MockData\MockDocumentCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationRules\RequestDetailValidatorTest.cs" />
+    <Compile Include="ValidationRules\RequestFeeValidatorTest.cs" />
+    <Compile Include="ValidationRules\RequestValidatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

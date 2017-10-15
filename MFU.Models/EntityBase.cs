@@ -19,5 +19,10 @@ namespace MFU.Models
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
+
+        public decimal GroupDocId { get; set; }
+        public Student Student { get; set; }
+        public decimal AcadYear { get; set; }
+        public decimal Semester { get; set; }
     }
 }
