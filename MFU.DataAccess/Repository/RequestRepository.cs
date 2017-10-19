@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dapper;
+using Oracle.ManagedDataAccess.Client;
+using System.Data;
 
 namespace MFU.DataAccess.Repository
 {
@@ -41,6 +43,22 @@ namespace MFU.DataAccess.Repository
             //    ).FirstOrDefault();
             //}
             return new Request();
+        }
+
+        public Province GetProvinceById(string id)
+        {
+            using (var conn = ConnectionFactory.Connection())
+            {
+                var parameters = new OracleDynamicParameters();
+                parameters.Add("vprovinceid", 170, dbType: OracleDbType.Int32);
+                parameters.Add("vlanguage", "T", dbType: OracleDbType.Varchar2);
+                parameters.Add("pdata", dbType: OracleDbType.RefCursor, direction: ParameterDirection.Output);
+                var affectedRows = conn.Query<Province>(
+                    sql: "SP_NAME",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure).FirstOrDefault();
+                return affectedRows;
+            }
         }
 
     }

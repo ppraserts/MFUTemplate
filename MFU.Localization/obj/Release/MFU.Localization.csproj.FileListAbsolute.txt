@@ -1,9 +1,0 @@
-C:\dev\MFUTemplate\MFU.Localization\bin\Release\MFU.Localization.dll
-C:\dev\MFUTemplate\MFU.Localization\bin\Release\MFU.Localization.pdb
-C:\dev\MFUTemplate\MFU.Localization\bin\Release\en-US\MFU.Localization.resources.dll
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\MFU.Localization.Resource.resources
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\MFU.Localization.Resource.en-US.resources
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\MFU.Localization.csproj.GenerateResource.Cache
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\en-US\MFU.Localization.resources.dll
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\MFU.Localization.dll
-C:\dev\MFUTemplate\MFU.Localization\obj\Release\MFU.Localization.pdb

@@ -1,7 +1,0 @@
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\bin\Debug\MFU.Models.dll
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\bin\Debug\MFU.Models.pdb
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\bin\Debug\FluentValidation.dll
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\bin\Debug\FluentValidation.xml
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.csprojResolveAssemblyReference.cache
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.dll
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Models\obj\Debug\MFU.Models.pdb

@@ -61,6 +61,7 @@
     <Compile Include="DataAccessAppSetting.cs" />
     <Compile Include="Database\ConnectionFactory.cs" />
     <Compile Include="Database\Interface\IRepository.cs" />
+    <Compile Include="Database\OracleDynamicParameters.cs" />
     <Compile Include="Database\Repository.cs" />
     <Compile Include="Database\SqlText.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

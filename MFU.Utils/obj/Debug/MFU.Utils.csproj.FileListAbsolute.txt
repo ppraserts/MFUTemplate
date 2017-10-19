@@ -1,5 +1,0 @@
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils\bin\Debug\MFU.Utils.dll
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils\bin\Debug\MFU.Utils.pdb
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils\obj\Debug\MFU.Utils.csprojResolveAssemblyReference.cache
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils\obj\Debug\MFU.Utils.dll
-c:\users\pcmiws11\documents\visual studio 2015\Projects\MFUTemplate\MFU.Utils\obj\Debug\MFU.Utils.pdb
