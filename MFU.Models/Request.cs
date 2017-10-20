@@ -14,5 +14,6 @@ namespace MFU.Models
         public string GraduateRequest { get; set; }
         public string TrackingNumber { get; set; }
         public ReceiveType ReceiveType { get; set; }
+        public RequestType RequestType { get; set; }
     }
 }

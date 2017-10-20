@@ -16,5 +16,20 @@ namespace MFU.WebAPI.Controllers
         {
             return requestService.GetById(id);
         }
+
+        public Request Put()
+        {
+            return requestService.AddRequest();
+        }
+
+        public Request Post(decimal id)
+        {
+            return requestService.UpdateRequest(id);
+        }
+
+        public void Delete(decimal id)
+        {
+            requestService.DeleteRequest(id);
+        }
     }
 }

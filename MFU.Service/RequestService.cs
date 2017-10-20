@@ -19,5 +19,20 @@ namespace MFU.Service
         {
             return requestRepository.GetRequestById(id);
         }
+
+        public Request AddRequest()
+        {
+            return requestRepository.AddRequest();
+        }
+
+        public Request UpdateRequest(decimal id)
+        {
+            return requestRepository.UpdateRequest(id);
+        }
+
+        public void DeleteRequest(decimal id)
+        {
+            requestRepository.DeleteRequest(id);
+        }
     }
 }
