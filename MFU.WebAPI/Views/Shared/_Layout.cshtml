@@ -138,7 +138,9 @@
                 </li>
                 <li>@Html.ActionLink("ภาษาไทย", "ChangeLanguage", "Home", new { lang = "th" }, null)</li>
                 <li>@Html.ActionLink("English", "ChangeLanguage", "Home", new { lang = "en" }, null)</li>
-                <li>@Html.ActionLink("Dropdown List", "ListDropdown", "Home", new { lang = "en" }, null)</li>
+                <li>@Html.ActionLink("Dropdown List", "ListDropdown", "Home", new {}, null)</li>
+                <li>@Html.ActionLink("Change Password", "Index", "RecoveryPassword", new {}, null)</li>
+                <li>@Html.ActionLink("Recovery Password", "RecoveryPassword", "RecoveryPassword", new { }, null)</li>
             </ul><!-- /.nav-list -->
 
             <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">

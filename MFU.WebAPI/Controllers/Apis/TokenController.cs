@@ -1,4 +1,5 @@
-﻿using MFU.WebAPI.Security;
+﻿using MFU.Models;
+using MFU.WebAPI.Security;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -15,22 +16,6 @@ using System.Web.Http;
 
 namespace MFU.WebAPI.Controllers
 {
-    public class Credentials
-    {
-        [Required]
-        public string EmailAddress { get; set; }
-
-        [Required]
-        public string Password { get; set; }
-    }
-
-    public class User
-    {
-        public long UserId { get; set; }
-        public string EmailAddress { get; set; }
-        public string Password { get; set; }
-        public string FullName { get; set; }
-    }
     public class TokenController : BaseApiController
     {
         private List<User> users = new List<User>() {

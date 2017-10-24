@@ -179,6 +179,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Apis\DocumentCategorysController.cs" />
+    <Compile Include="Controllers\RecoveryPasswordController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,6 +260,8 @@
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\ListDropdown.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\RecoveryPassword\Index.cshtml" />
+    <Content Include="Views\RecoveryPassword\RecoveryPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MFU.Localization\MFU.Localization.csproj">
@@ -276,6 +279,10 @@
     <ProjectReference Include="..\MFU.Service\MFU.Service.csproj">
       <Project>{e2f361c8-a18e-42dc-b5c6-0a29c61acfae}</Project>
       <Name>MFU.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MFU.Utils\MFU.Utils.csproj">
+      <Project>{96FAE97E-173F-4E4F-8845-18E57C45B297}</Project>
+      <Name>MFU.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

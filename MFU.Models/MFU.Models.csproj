@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Credentials.cs" />
+    <Compile Include="ChangePassword.cs" />
+    <Compile Include="RecoveryPassword.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Course.cs" />
@@ -67,6 +71,8 @@
     <Compile Include="ValidationRules\AddressValidator.cs" />
     <Compile Include="ValidationRules\DocumentCategoryValidator.cs" />
     <Compile Include="ValidationRules\DocumentValidator.cs" />
+    <Compile Include="ValidationRules\ChangePasswordValidator.cs" />
+    <Compile Include="ValidationRules\RecoveryPasswordValidator.cs" />
     <Compile Include="ValidationRules\RequestDetailValidator.cs" />
     <Compile Include="ValidationRules\RequestFeeValidator.cs" />
     <Compile Include="ValidationRules\RequestValidator.cs" />
